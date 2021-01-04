@@ -3,7 +3,7 @@
 #include <boost/range/adaptor/reversed.hpp>
 #include <bits/stdc++.h> 
 
-auto strReverser(std::string &strToReverse){
+auto strReverser(std::string &strToReverse){ //We send the variable by reference so we avoid copying the whole variable into an another location.
   //Time complexity O(n), we iterate through the whole string
   for(int i = strToReverse.length() - 1; i >= 0; i--){
     std::cout << strToReverse[i];
